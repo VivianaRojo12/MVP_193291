@@ -80,7 +80,7 @@ class MyApp extends StatelessWidget {
                   height: 48,
                   decoration: BoxDecoration(
                     border: Border.all(
-                        color: Color(0xff64686f),
+                        color: Color(0xFF64686F),
                         width: 3
                         ),
                     borderRadius: BorderRadius.circular(40.0),
@@ -88,16 +88,24 @@ class MyApp extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(Icons.email, color: Color(0xff64686f)),
+                      Icon(Icons.email, color: Color(0xFF64686F)),
                       SizedBox(width: 30),
                       Text("Registrase con e-mail",
                         style: TextStyle(
-                            color: Color(0xff64686f),
+                            color: Color(0xFF64686F),
                             fontWeight: FontWeight.bold,
                             fontSize: 14),
                       )
                     ],
                   ),
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                Text('Entrar como invitado',
+                  style: TextStyle(
+                      color: Color(0xFFFC1460), fontWeight: FontWeight.bold),
                 ),
               ],
             ),
