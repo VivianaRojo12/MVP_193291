@@ -1,12 +1,19 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-  
+class MyApp extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp( 
+      home: Home()
+    );
+  }
+}
+
+class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,13 +42,15 @@ class MyApp extends StatelessWidget {
                   width: 300,
                   height: 48,
                   decoration: BoxDecoration(
-                    color: Color(0xFF3169F5),
+                    color: Color(0xFF3157F5),
                     borderRadius: BorderRadius.circular(40.0),
                   ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(Icons.favorite, color: Colors.white),
+                      Icon(Icons.mail,
+                      color: Colors.white
+                      ),
                       SizedBox(width: 35),
                       Text("Continuar con Google",
                         style: TextStyle(
@@ -63,7 +72,9 @@ class MyApp extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(Icons.facebook, color: Colors.white),
+                      Icon(Icons.facebook, 
+                      color: Colors.white
+                      ),
                       SizedBox(width: 20),
                       Text("Continuar con Facebook",
                         style: TextStyle(
@@ -88,7 +99,9 @@ class MyApp extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(Icons.email, color: Color(0xFF64686F)),
+                      Icon(Icons.email, 
+                      color: Color(0xFF64686F)
+                      ),
                       SizedBox(width: 30),
                       Text("Registrase con e-mail",
                         style: TextStyle(
@@ -105,7 +118,15 @@ class MyApp extends StatelessWidget {
               children: [
                 Text('Entrar como invitado',
                   style: TextStyle(
-                      color: Color(0xFFFC1460), fontWeight: FontWeight.bold),
+                      color: Color(0xFFFC1460), 
+                      fontSize: 13,
+                      fontWeight: FontWeight.bold),
+                ),
+                Text('Entrar como vendedor',
+                  style: TextStyle(
+                      color: Color(0xF76AA757), 
+                      fontSize: 13,
+                      fontWeight: FontWeight.bold),
                 ),
               ],
             ),
