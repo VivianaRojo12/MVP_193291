@@ -122,6 +122,9 @@ class Home extends StatelessWidget {
                       fontSize: 13,
                       fontWeight: FontWeight.bold),
                 ),
+                SizedBox(
+                  height: 15,
+                ),
                 Text('Entrar como vendedor',
                   style: TextStyle(
                       color: Color(0xF76AA757), 
@@ -130,6 +133,22 @@ class Home extends StatelessWidget {
                 ),
               ],
             ),
+             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "¿Ya tienes cuenta? ",
+                  style: TextStyle(color: Color(0xFF64686F),
+                  fontSize: 13,),
+                ),
+                Text("Iniciar sesión",
+                  style: TextStyle(
+                      color: Color(0xFFFC1460), 
+                      fontSize: 13,
+                      fontWeight: FontWeight.bold),
+                )
+              ],
+            )
           ],
         ),
       ),
