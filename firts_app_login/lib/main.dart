@@ -30,11 +30,10 @@ class Home extends StatelessWidget {
                     left: 24, 
                     right: 24
                   ),
-              child: Container(
-                width: 300,
-                height: 125,
-                color: Color(0xFFE8EAF6),
-              ),
+              child: Image.asset(
+                "pets.png",
+                height: 150,
+              ) 
             ),
             Column(
               children: [
