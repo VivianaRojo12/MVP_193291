@@ -16,25 +16,30 @@ class MyApp extends StatelessWidget{
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+   
+    final photo = Container(
+        margin: EdgeInsets.only(
+          top: 50.0, 
+          bottom: 50.0, 
+          left: 24, 
+          right: 24
+        ),
+        width: 150,
+        height: 150,
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/images/pets.png"),
+          ),
+        ),
+      );
+
     return Scaffold(
       backgroundColor: Color(0xFFFFFFFF),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Padding(
-              padding:
-                  EdgeInsets.only(
-                    top: 50.0, 
-                    bottom: 0.0, 
-                    left: 24, 
-                    right: 24
-                  ),
-              child: Image.asset(
-                "pets.png",
-                height: 150,
-              ) 
-            ),
+            photo,
             Column(
               children: [
                 Container(
