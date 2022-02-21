@@ -18,7 +18,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
    
     final photo = Container(
-        margin: EdgeInsets.only(
+        margin: const EdgeInsets.only(
           top: 50.0, 
           bottom: 50.0, 
           left: 24, 
@@ -26,7 +26,7 @@ class Home extends StatelessWidget {
         ),
         width: 150,
         height: 150,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage("assets/images/pets.png"),
           ),
@@ -34,7 +34,7 @@ class Home extends StatelessWidget {
       );
 
     return Scaffold(
-      backgroundColor: Color(0xFFFFFFFF),
+      backgroundColor: const Color.fromRGBO(255, 255, 255, 1.0),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -46,12 +46,12 @@ class Home extends StatelessWidget {
                   width: 300,
                   height: 48,
                   decoration: BoxDecoration(
-                    color: Color(0xFF3157F5),
+                    color: const Color.fromRGBO(49, 87, 245, 1.0),
                     borderRadius: BorderRadius.circular(40.0),
                   ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
+                    children: const [
                       Icon(Icons.mail,
                       color: Colors.white
                       ),
@@ -65,17 +65,17 @@ class Home extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
                 Container(
                   width: 300,
                   height: 48,
                   decoration: BoxDecoration(
-                    color: Color(0xff324fa5),
+                    color: const Color.fromRGBO(50, 79, 165, 1.0),
                     borderRadius: BorderRadius.circular(40.0),
                   ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
+                    children: const[
                       Icon(Icons.facebook, 
                       color: Colors.white
                       ),
@@ -89,27 +89,27 @@ class Home extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(height: 60),
+                const SizedBox(height: 60),
                 Container(
                   width: 300,
                   height: 48,
                   decoration: BoxDecoration(
                     border: Border.all(
-                        color: Color(0xFF64686F),
+                        color: const Color.fromRGBO(100, 104, 111, 1.0),
                         width: 3
                         ),
                     borderRadius: BorderRadius.circular(40.0),
                   ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
+                    children: const [
                       Icon(Icons.email, 
-                      color: Color(0xFF64686F)
+                      color: Color.fromRGBO(100, 104, 111, 1.0),
                       ),
                       SizedBox(width: 30),
                       Text("Registrase con e-mail",
                         style: TextStyle(
-                            color: Color(0xFF64686F),
+                            color: Color.fromRGBO(100, 104, 111, 1.0),
                             fontWeight: FontWeight.bold,
                             fontSize: 14),
                       )
@@ -119,10 +119,10 @@ class Home extends StatelessWidget {
               ],
             ),
             Column(
-              children: [
+              children: const [
                 Text('Entrar como invitado',
                   style: TextStyle(
-                      color: Color(0xFFFC1460), 
+                      color: Color.fromRGBO(252, 20, 96, 1.0), 
                       fontSize: 13,
                       fontWeight: FontWeight.bold),
                 ),
@@ -131,7 +131,7 @@ class Home extends StatelessWidget {
                 ),
                 Text('Entrar como vendedor',
                   style: TextStyle(
-                      color: Color(0xF76AA757), 
+                      color: Color.fromRGBO(118, 170, 117, 1.0), 
                       fontSize: 13,
                       fontWeight: FontWeight.bold),
                 ),
@@ -139,15 +139,15 @@ class Home extends StatelessWidget {
             ),
              Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
+              children: const [
                 Text(
                   "¿Ya tienes cuenta? ",
-                  style: TextStyle(color: Color(0xFF64686F),
+                  style: TextStyle(color: Color.fromRGBO(100, 104, 111, 1.0),
                   fontSize: 13,),
                 ),
                 Text("Iniciar sesión",
                   style: TextStyle(
-                      color: Color(0xFFFC1460), 
+                      color: Color.fromRGBO(252, 20, 96, 1.0), 
                       fontSize: 13,
                       fontWeight: FontWeight.bold),
                 )
